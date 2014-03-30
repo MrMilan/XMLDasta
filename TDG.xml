@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<tdg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ciselniky.dasta.mzcr.cz/xmlschema/uzis-4.09.01.xsd" dat_gen="2014-03-27" cas_gen="17:04" ver_nclp="02.43.01" ver_ds="04.08.05" uzivatel="WebService" uzis_verze="201410" uzis_plati_od="2014-01-01">
+<VETA kod="010" rim="I." naz="Někt.infekč.a parazit.nemoci" dg="A00-B99" swho1="001" plati_od="1994-01-01" />
+<VETA kod="020" rim="II." naz="Novotvary" dg="C00-D48" swho1="026" plati_od="1994-01-01" />
+<VETA kod="030" rim="III." naz="N.krve,kr.org.a n.por.mech.im." dg="D50-D89" swho1="048" plati_od="1994-01-01" />
+<VETA kod="040" rim="IV." naz="Nem.endokr.,výž.a přem.látek" dg="E00-E90" swho1="051" plati_od="1994-01-01" />
+<VETA kod="050" rim="V." naz="Poruchy duš.a poruchy chování" dg="F00-F99" swho1="055" plati_od="1994-01-01" />
+<VETA kod="060" rim="VI." naz="Nemoci nervové soustavy" dg="G00-G99" swho1="058" plati_od="1994-01-01" />
+<VETA kod="070" rim="VII." naz="Nemoci oka a očních adnex" dg="H00-H59" swho1="062" plati_od="1994-01-01" />
+<VETA kod="080" rim="VIII." naz="Nem.ucha a bradavk.výběžku" dg="H60-H95" swho1="063" plati_od="1994-01-01" />
+<VETA kod="090" rim="IX." naz="Nemoci oběhové soustavy" dg="I00-I99" swho1="064" plati_od="1994-01-01" />
+<VETA kod="100" rim="X." naz="Nemoci dýchací soustavy" dg="J00-J99" swho1="072" plati_od="1994-01-01" />
+<VETA kod="110" rim="XI." naz="Nemoci trávicí soustavy" dg="K00-K93" swho1="078" plati_od="1994-01-01" />
+<VETA kod="120" rim="XII." naz="Nem.kůže a podkožního vaziva" dg="L00-L99" swho1="082" plati_od="1994-01-01" />
+<VETA kod="130" rim="XIII." naz="N.sval.a kost.sous.a poj.tkáně" dg="M00-M99" swho1="083" plati_od="1994-01-01" />
+<VETA kod="140" rim="XIV." naz="Nem.močové a pohlavní soustavy" dg="N00-N99" swho1="084" plati_od="1994-01-01" />
+<VETA kod="150" rim="XV." naz="Těhotenství, porod a šestined." dg="O00-O99" swho1="087" plati_od="1994-01-01" />
+<VETA kod="160" rim="XVI." naz="Něk.stavy vzniklé v perin.obd." dg="P00-P96" swho1="092" plati_od="1994-01-01" />
+<VETA kod="170" rim="XVII." naz="Vroz.vady, def.a chrom.abnorm." dg="Q00-Q99" swho1="093" plati_od="1994-01-01" />
+<VETA kod="180" rim="XVIII." naz="Příz., zn.a abn.kl.a l.nál.NJ" dg="R00-R99" swho1="094" plati_od="1994-01-01" />
+<VETA kod="190" rim="XIX." naz="Por.a otr.a n.j.násl.vněj.příč" dg="S00-T98" plati_od="1994-01-01" />
+<VETA kod="200" rim="XX." naz="Vnější příč.nemocn.a úmrtnosti" dg="V01-Y98" swho1="095" plati_od="1994-01-01" />
+<VETA kod="210" rim="XXI." naz="Fakt.ovl.zdr.stav a k.se zdr.s" dg="Z00-Z99" plati_od="1994-01-01" />
+<VETA kod="220" rim="XXII." naz="Kódy pro speciální účely" dg="U00-U99" plati_od="2009-01-01" />
+</tdg>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<swho5 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ciselniky.dasta.mzcr.cz/xmlschema/uzis-4.09.01.xsd" dat_gen="2014-03-27" cas_gen="17:01" ver_nclp="02.43.01" ver_ds="04.08.05" uzivatel="WebService" uzis_verze="201410" uzis_plati_od="2014-01-01">
+<VETA kod="001" naz="Cholera" dg="A00" plati_od="1994-01-01" />
+<VETA kod="002" naz="Břišní tyfus a paratyfus" dg="A01" plati_od="1994-01-01" />
+<VETA kod="003" naz="Shigellosis" dg="A03" plati_od="1994-01-01" />
+<VETA kod="004" naz="Amébóza" dg="A06" plati_od="1994-01-01" />
+<VETA kod="005" naz="Diarea a g-enter.předp.inf.pův" dg="A09" plati_od="1994-01-01" />
+<VETA kod="006" naz="Jiné střevní infekční nemoci" dg="A02,A04-A05,A07-A08" plati_od="1994-01-01" />
+<VETA kod="007" naz="Tuberkulóza dýchacího ústrojí" dg="A15-A16" plati_od="1994-01-01" />
+<VETA kod="008" naz="Jiná tuberkulóza" dg="A17-A19" plati_od="1994-01-01" />
+<VETA kod="009" naz="Mor [pestis]" dg="A20" plati_od="1994-01-01" />
+<VETA kod="010" naz="Brucelóza [vlnivá horečka]" dg="A23" plati_od="1994-01-01" />
+<VETA kod="011" naz="Lepra [malomocenství]" dg="A30" plati_od="1994-01-01" />
+<VETA kod="012" naz="Tetanus novorozenců" dg="A33" plati_od="1994-01-01" />
+<VETA kod="013" naz="Jiný tetanus" dg="A34-A35" plati_od="1994-01-01" />
+<VETA kod="014" naz="Záškrt [diphtheria]" dg="A36" plati_od="1994-01-01" />
+<VETA kod="015" naz="Dávivý kašel [pertussis]" dg="A37" plati_od="1994-01-01" />
+<VETA kod="016" naz="Meningokokové infekce" dg="A39" plati_od="1994-01-01" />
+<VETA kod="017" naz="Septikémie" dg="A40-A41" plati_od="1994-01-01" />
+<VETA kod="018" naz="Jiné bakteriální nemoci" dg="A21-A22,A24-A28,A31-A32,A38,A42-A49" plati_od="1994-01-01" />
+<VETA kod="019" naz="Vrozená syfilis" dg="A50" plati_od="1994-01-01" />
+<VETA kod="020" naz="Časná syfilis" dg="A51" plati_od="1994-01-01" />
+<VETA kod="021" naz="Jiná syfilis" dg="A52-A53" plati_od="1994-01-01" />
+<VETA kod="022" naz="Gonokoková infekce" dg="A54" plati_od="1994-01-01" />
+<VETA kod="023" naz="Sex.přenáš.chlamydiová onemoc." dg="A55-A56" plati_od="1994-01-01" />
+<VETA kod="024" naz="J.inf.přen.převáž.sex.způsobem" dg="A57-A64" plati_od="1994-01-01" />
+<VETA kod="025" naz="Návrat.horečka[typh.recurrens]" dg="A68" plati_od="1994-01-01" />
+<VETA kod="026" naz="Trachom" dg="A71" plati_od="1994-01-01" />
+<VETA kod="027" naz="Skvrnivka" dg="A75" plati_od="1994-01-01" />
+<VETA kod="028" naz="Ak.poliomyelitida[ak.dět.obr.]" dg="A80" plati_od="1994-01-01" />
+<VETA kod="029" naz="Vzteklina [rabies]" dg="A82" plati_od="1994-01-01" />
+<VETA kod="030" naz="Virová encefalitida" dg="A83-A86" plati_od="1994-01-01" />
+<VETA kod="031" naz="Žlutá zimnice" dg="A95" plati_od="1994-01-01" />
+<VETA kod="032" naz="J.vir.a vir.hemor.hor.př.člen." dg="A90-A94,A96-A99" plati_od="1994-01-01" />
+<VETA kod="033" naz="Prostý opar-inf.v.Herpes simp." dg="B00" plati_od="1994-01-01" />
+<VETA kod="034" naz="Plané neštovice a pásový opar" dg="B01-B02" plati_od="1994-01-01" />
+<VETA kod="035" naz="Spalničky [morbilli]" dg="B05" plati_od="1994-01-01" />
+<VETA kod="036" naz="Zarděnky [rubeola]" dg="B06" plati_od="1994-01-01" />
+<VETA kod="037" naz="Akutní hepatitida B" dg="B16" plati_od="1994-01-01" />
+<VETA kod="038" naz="Jiná virová hepatitida" dg="B15,B17-B19" plati_od="1994-01-01" />
+<VETA kod="039" naz="Onem.virem lid.imunodef.[HIV]" dg="B20-B24" plati_od="1994-01-01" />
+<VETA kod="040" naz="Epid.zá.příušnic[parotitis ep]" dg="B26" plati_od="1994-01-01" />
+<VETA kod="041" naz="Jiné virové nemoci" dg="A81,A87-A89,B03-B04,B07-B09,B25,B27-B34" plati_od="1994-01-01" />
+<VETA kod="042" naz="Mykózy" dg="B35-B49" plati_od="1994-01-01" />
+<VETA kod="043" naz="Malárie" dg="B50-B54" plati_od="1994-01-01" />
+<VETA kod="044" naz="Leishmanióza" dg="B55" plati_od="1994-01-01" />
+<VETA kod="045" naz="Trypanosomóza" dg="B56-B57" plati_od="1994-01-01" />
+<VETA kod="046" naz="Schistosomóza" dg="B65" plati_od="1994-01-01" />
+<VETA kod="047" naz="Jiné infekce trematody" dg="B66" plati_od="1994-01-01" />
+<VETA kod="048" naz="Echinokokóza" dg="B67" plati_od="1994-01-01" />
+<VETA kod="049" naz="Drakunkulóza" dg="B72" plati_od="1994-01-01" />
+<VETA kod="050" naz="Onchocerkóza" dg="B73" plati_od="1994-01-01" />
+<VETA kod="051" naz="Filarióza" dg="B74" plati_od="1994-01-01" />
+<VETA kod="052" naz="Onemocnění měchožilem" dg="B76" plati_od="1994-01-01" />
+<VETA kod="053" naz="Jiné helmintózy" dg="B68-B71,B75,B77-B83" plati_od="1994-01-01" />
+<VETA kod="054" naz="Následky tuberkulózy" dg="B90" plati_od="1994-01-01" />
+<VETA kod="055" naz="Následky poliomyelitidy" dg="B91" plati_od="1994-01-01" />
+<VETA kod="056" naz="Následky lepry" dg="B92" plati_od="1994-01-01" />
+<VETA kod="057" naz="Jiné inf.a parazitární nemoci" dg="A65-A67,A69-A70,A74,A77-A79,B58-B64,B85-B89,B94,B99" plati_od="1994-01-01" />
+<VETA kod="058" naz="ZN rtu, dutiny ústní a hltanu" dg="C00-C14" plati_od="1994-01-01" />
+<VETA kod="059" naz="ZN jícnu" dg="C15" plati_od="1994-01-01" />
+<VETA kod="060" naz="ZN žaludku" dg="C16" plati_od="1994-01-01" />
+<VETA kod="061" naz="ZN tlustého střeva" dg="C18" plati_od="1994-01-01" />
+<VETA kod="062" naz="ZN r-sigmoid.sp.,kon.,ř.a ř.k." dg="C19-C21" plati_od="1994-01-01" />
+<VETA kod="063" naz="ZN jater a intrahep.žluč.cest" dg="C22" plati_od="1994-01-01" />
+<VETA kod="064" naz="ZN slinivky břišní" dg="C25" plati_od="1994-01-01" />
+<VETA kod="065" naz="Jiné ZN trávicích orgánů" dg="C17,C23-C24,C26" plati_od="1994-01-01" />
+<VETA kod="066" naz="ZN hrtanu" dg="C32" plati_od="1994-01-01" />
+<VETA kod="067" naz="ZN průdušn.,průdušky a plíce" dg="C33-C34" plati_od="1994-01-01" />
+<VETA kod="068" naz="Jiné ZN dých.a nitrohrud.org." dg="C30-C31,C37-C39" plati_od="1994-01-01" />
+<VETA kod="069" naz="ZN kosti a kloubní chrupavky" dg="C40-C41" plati_od="1994-01-01" />
+<VETA kod="070" naz="Zhoubný melanom kůže" dg="C43" plati_od="1994-01-01" />
+<VETA kod="071" naz="Jiné zhoubné novotvary kůže" dg="C44" plati_od="1994-01-01" />
+<VETA kod="072" naz="ZN mezoteliální a měkké tkáně" dg="C45-C49" plati_od="1994-01-01" />
+<VETA kod="073" naz="Zhoubný novotvar prsu" dg="C50" plati_od="1994-01-01" />
+<VETA kod="074" naz="ZN hrdla děložního (cervixu)" dg="C53" plati_od="1994-01-01" />
+<VETA kod="075" naz="ZN jiných a neurč.částí dělohy" dg="C54-C55" plati_od="1994-01-01" />
+<VETA kod="076" naz="Jiný ZN žen.pohlavních orgánů" dg="C51-C52,C56-C58" plati_od="1994-01-01" />
+<VETA kod="077" naz="ZN prostaty" dg="C61" plati_od="1994-01-01" />
+<VETA kod="078" naz="Jiné ZN muž.pohlavních orgánů" dg="C60,C62-C63" plati_od="1994-01-01" />
+<VETA kod="079" naz="ZN močového měchýře" dg="C67" plati_od="1994-01-01" />
+<VETA kod="080" naz="Jiné ZN močového ústrojí" dg="C64-C66,C68" plati_od="1994-01-01" />
+<VETA kod="081" naz="ZN oka a očních adnex" dg="C69" plati_od="1994-01-01" />
+<VETA kod="082" naz="ZN mozku" dg="C71" plati_od="1994-01-01" />
+<VETA kod="083" naz="ZN jiných částí CNS" dg="C7O,C72" plati_od="1994-01-01" />
+<VETA kod="084" naz="ZN j.,n.urč.,sek.,NS a mn.lok." dg="C73-C80,C97" plati_od="1994-01-01" />
+<VETA kod="085" naz="Hodgkinova nemoc" dg="C81" plati_od="1994-01-01" />
+<VETA kod="086" naz="Lymfom ne-Hodgkinův" dg="C82-C86" plati_od="1994-01-01" />
+<VETA kod="087" naz="Leukémie" dg="C91-C95" plati_od="1994-01-01" />
+<VETA kod="088" naz="Jiné ZN lym.,krtv.a příb.tkáně" dg="C88-C90,C96" plati_od="1994-01-01" />
+<VETA kod="089" naz="Carcinoma in situ hrdla dělož." dg="D06" plati_od="1994-01-01" />
+<VETA kod="090" naz="Nezhoubný novotvar kůže" dg="D22-D23" plati_od="1994-01-01" />
+<VETA kod="091" naz="Nezhoubný novotvar prsu" dg="D24" plati_od="1994-01-01" />
+<VETA kod="092" naz="Leiomyom dělohy" dg="D25" plati_od="1994-01-01" />
+<VETA kod="093" naz="Nezhoubný novotvar vaječníku" dg="D27" plati_od="1994-01-01" />
+<VETA kod="094" naz="Nezhoub.novotvar moč.orgánů" dg="D30" plati_od="1994-01-01" />
+<VETA kod="095" naz="Nezhoub.novotv.mozku a j.č.CNS" dg="D33" plati_od="1994-01-01" />
+<VETA kod="096" naz="J.N in s.a nezh.a nejist.chov." dg="D00-D05,D07-D21,D26,D28-D29,D31-D32,D34-D48" plati_od="1994-01-01" />
+<VETA kod="097" naz="Anémie z nedostatku železa" dg="D50" plati_od="1994-01-01" />
+<VETA kod="098" naz="Jiné anémie" dg="D51-D64" plati_od="1994-01-01" />
+<VETA kod="099" naz="Krv.st.a j.nem.krve a krtv.org" dg="D65-D77" plati_od="1994-01-01" />
+<VETA kod="100" naz="Někt.poruchy mechanis.imunity" dg="D80-D89" plati_od="1994-01-01" />
+<VETA kod="101" naz="Poruchy štít.žl.z jod.karence" dg="E00-E02" plati_od="1994-01-01" />
+<VETA kod="102" naz="Tyreotoxikóza" dg="E05" plati_od="1994-01-01" />
+<VETA kod="103" naz="Jiné poruchy štítné žlázy" dg="E03-E04,E06-E07" plati_od="1994-01-01" />
+<VETA kod="104" naz="Diabetes mellitus" dg="E10-E14" plati_od="1994-01-01" />
+<VETA kod="105" naz="Podvýživa" dg="E40-E46" plati_od="1994-01-01" />
+<VETA kod="106" naz="Karence vitamínu A" dg="E50" plati_od="1994-01-01" />
+<VETA kod="107" naz="Karence jiných vitamínů" dg="E51-E56" plati_od="1994-01-01" />
+<VETA kod="108" naz="Násl.podvýž.a j.nutrič.karencí" dg="E64" plati_od="1994-01-01" />
+<VETA kod="109" naz="Obezita [otylost]" dg="E66" plati_od="1994-01-01" />
+<VETA kod="110" naz="Sníž.obj.plazmy n.extrac.tek." dg="E86" plati_od="1994-01-01" />
+<VETA kod="111" naz="J.nem.endokr.,výživy a přem.l." dg="E15-E35,E58-E63,E65,E67-E85,E87-E90" plati_od="1994-01-01" />
+<VETA kod="112" naz="Demence" dg="F00-F03" plati_od="1994-01-01" />
+<VETA kod="113" naz="P.duš.a p.chov.zp.už.alkoholu" dg="F10" plati_od="1994-01-01" />
+<VETA kod="114" naz="P.duš.a p.ch.zp.u.j.psychoak.l" dg="F11-F19" plati_od="1994-01-01" />
+<VETA kod="115" naz="Schizofr.,p.sch-typ.,p.s bludy" dg="F20-F29" plati_od="1994-01-01" />
+<VETA kod="116" naz="Por.nálady [afektivní poruchy]" dg="F30-F39" plati_od="1994-01-01" />
+<VETA kod="117" naz="Neurot.,stres.a somatoform.por" dg="F40-F48" plati_od="1994-01-01" />
+<VETA kod="118" naz="Mentální retardace" dg="F70-F79" plati_od="1994-01-01" />
+<VETA kod="119" naz="Jiné por.duševní a por.chování" dg="F04-F09,F50-F69,F80-F99" plati_od="1994-01-01" />
+<VETA kod="120" naz="Zánětlivé nemoci CNS" dg="G00-G09" plati_od="1994-01-01" />
+<VETA kod="121" naz="Parkinsonova nemoc" dg="G20" plati_od="1994-01-01" />
+<VETA kod="122" naz="Alzheimerova nemoc" dg="G30" plati_od="1994-01-01" />
+<VETA kod="123" naz="Roztroušená skleróza" dg="G35" plati_od="1994-01-01" />
+<VETA kod="124" naz="Epilepsie" dg="G40-G41" plati_od="1994-01-01" />
+<VETA kod="125" naz="Migréna a j.sy.bolesti hlavy" dg="G43-G44" plati_od="1994-01-01" />
+<VETA kod="126" naz="Přech.mozk.isch.záchv.a pří.sy" dg="G45" plati_od="1994-01-01" />
+<VETA kod="127" naz="Onem.nervů,nerv.kořenů a plet." dg="G50-G59" plati_od="1994-01-01" />
+<VETA kod="128" naz="Mozk.obrna a jiné sy.ochrnutí" dg="G80-G83" plati_od="1994-01-01" />
+<VETA kod="129" naz="Jiné nemoci nervové soustavy" dg="G10-G14,G21-G26,G31-G32,G36-G37,G46-G47,G60-G73,G90-G99" plati_od="1994-01-01" />
+<VETA kod="130" naz="Zánět očního víčka" dg="H00-H01" plati_od="1994-01-01" />
+<VETA kod="131" naz="Konjunktivitida a j.onem.spoj." dg="H10-H13" plati_od="1994-01-01" />
+<VETA kod="132" naz="Keratitida a j.on.skléry a roh" dg="H15-H19" plati_od="1994-01-01" />
+<VETA kod="133" naz="Katarakta a jiná onem. čočky" dg="H25-H28" plati_od="1994-01-01" />
+<VETA kod="134" naz="Odchlípení a trhliny sítnice" dg="H33" plati_od="1994-01-01" />
+<VETA kod="135" naz="Glaukom" dg="H40-H42" plati_od="1994-01-01" />
+<VETA kod="136" naz="Strabismus" dg="H49-H50" plati_od="1994-01-01" />
+<VETA kod="137" naz="Poruchy refrakce a akomodace" dg="H52" plati_od="1994-01-01" />
+<VETA kod="138" naz="Slepota a slabozrakost" dg="H54" plati_od="1994-01-01" />
+<VETA kod="139" naz="Jiné nem.oka a očních adnex" dg="H02-H06,H20-H22,H30-H32,H34-H36,H43-H48,H51,H53,H55-H59" plati_od="1994-01-01" />
+<VETA kod="140" naz="Zá.s.ucha a j.nem.s.ucha a b.v" dg="H65-H75" plati_od="1994-01-01" />
+<VETA kod="141" naz="Ztráta sluchu" dg="H90-H91" plati_od="1994-01-01" />
+<VETA kod="142" naz="Jiné nem.ucha a brad.výběžku" dg="H60-H62,H80-H83,H92-H95" plati_od="1994-01-01" />
+<VETA kod="143" naz="Akutní revmatická horečka" dg="I00-I02" plati_od="1994-01-01" />
+<VETA kod="144" naz="Chron.revmat.choroby srdeční" dg="I05-I09" plati_od="1994-01-01" />
+<VETA kod="145" naz="Esenciál.(primární) hypertenze" dg="I10" plati_od="1994-01-01" />
+<VETA kod="146" naz="Jiné hypertenzní nemoci" dg="I11-I15" plati_od="1994-01-01" />
+<VETA kod="147" naz="Akutní infarkt myokardu" dg="I21-I22" plati_od="1994-01-01" />
+<VETA kod="148" naz="Jiné ischemické nemoci srdeční" dg="I20,I23-I25" plati_od="1994-01-01" />
+<VETA kod="149" naz="Plicní embolie" dg="I26" plati_od="1994-01-01" />
+<VETA kod="150" naz="Por.ved.srd.vzru.a srd.arytmie" dg="I44-I49" plati_od="1994-01-01" />
+<VETA kod="151" naz="Selhání srdce" dg="I50" plati_od="1994-01-01" />
+<VETA kod="152" naz="Jiné nemoci srdce" dg="I27-I43,I51-I52" plati_od="1994-01-01" />
+<VETA kod="153" naz="Mozkové krvácení" dg="I60-I62" plati_od="1994-01-01" />
+<VETA kod="154" naz="Mozkový infarkt" dg="I63" plati_od="1994-01-01" />
+<VETA kod="155" naz="Cév.př.mozk.,NS krv.n.infarkt" dg="I64" plati_od="1994-01-01" />
+<VETA kod="156" naz="Jiné cévní nemoci mozku" dg="I65-I69" plati_od="1994-01-01" />
+<VETA kod="157" naz="Ateroskleróza" dg="I70" plati_od="1994-01-01" />
+<VETA kod="158" naz="Jiné nemoci periferních cév" dg="I73" plati_od="1994-01-01" />
+<VETA kod="159" naz="Tepenná embolie a trombóza" dg="I74" plati_od="1994-01-01" />
+<VETA kod="160" naz="J.nem.tepen,tepének a vláseč." dg="I71-I72,I77-I79" plati_od="1994-01-01" />
+<VETA kod="161" naz="Fleb.,trombofl.,ž.emb.a tromb." dg="I80-I82" plati_od="1994-01-01" />
+<VETA kod="162" naz="Žil.městky - varices dol.konč." dg="I83" plati_od="1994-01-01" />
+<VETA kod="164" naz="Jiné nemoci oběhové soustavy" dg="I85-I99" plati_od="1994-01-01" />
+<VETA kod="165" naz="Ak.faryngit.a ak.tonsilitida" dg="J02-J03" plati_od="1994-01-01" />
+<VETA kod="166" naz="Ak.laryngitida a tracheitida" dg="J04" plati_od="1994-01-01" />
+<VETA kod="167" naz="Jiné ak.infekce hor.dých.cest" dg="J00-J01,J05-J06" plati_od="1994-01-01" />
+<VETA kod="168" naz="Chřipka" dg="J09-J11" plati_od="1994-01-01" />
+<VETA kod="169" naz="Pneumonie" dg="J12-J18" plati_od="1994-01-01" />
+<VETA kod="170" naz="Ak.zá.průduš.a ak.zá.průdušin." dg="J20-J21" plati_od="1994-01-01" />
+<VETA kod="171" naz="Chr.sinusitida[zá.vedl.nos.d.]" dg="J32" plati_od="1994-01-01" />
+<VETA kod="172" naz="Jiné nem.nosu a vedl.nos.dutin" dg="J30-J31,J33-J34" plati_od="1994-01-01" />
+<VETA kod="173" naz="Chr.nem.mandlí a adenoid.tkáně" dg="J35" plati_od="1994-01-01" />
+<VETA kod="174" naz="Jiné nemoci horních dých.cest" dg="J36-J39" plati_od="1994-01-01" />
+<VETA kod="175" naz="Zá.průd.,emfyz.aj.ch.obs.pl.n." dg="J40-J44" plati_od="1994-01-01" />
+<VETA kod="176" naz="Astma" dg="J45-J46" plati_od="1994-01-01" />
+<VETA kod="177" naz="Bronchiektazie" dg="J47" plati_od="1994-01-01" />
+<VETA kod="178" naz="Pneumokoniózy" dg="J60-J65" plati_od="1994-01-01" />
+<VETA kod="179" naz="Jiné nemoci dýchací soustavy" dg="J22,J66-J99" plati_od="1994-01-01" />
+<VETA kod="180" naz="Zubní kaz" dg="K02" plati_od="1994-01-01" />
+<VETA kod="181" naz="Jiné nem.zubů a podpůr.tkání" dg="K00-K01,K03-K08" plati_od="1994-01-01" />
+<VETA kod="182" naz="J.nem.dut.ústní,sl.žl.a čelis." dg="K09-K14" plati_od="1994-01-01" />
+<VETA kod="183" naz="Žaludeční a dvanáctníkový vřed" dg="K25-K27" plati_od="1994-01-01" />
+<VETA kod="184" naz="Zá.žaludku a zá.dvanáctníku" dg="K29" plati_od="1994-01-01" />
+<VETA kod="185" naz="J.nem.jícnu, žalud.a dvanáctn." dg="K20-K23,K28,K30-K31" plati_od="1994-01-01" />
+<VETA kod="186" naz="Nemoci apendixu" dg="K35-K38" plati_od="1994-01-01" />
+<VETA kod="187" naz="Tříselná kýla" dg="K40" plati_od="1994-01-01" />
+<VETA kod="188" naz="Jiná kýla" dg="K41-K46" plati_od="1994-01-01" />
+<VETA kod="189" naz="Reg.enter.[Crohn]a ulc.colitis" dg="K50-K51" plati_od="1994-01-01" />
+<VETA kod="190" naz="Par.ileus a stř.neprůch.b.kýly" dg="K56" plati_od="1994-01-01" />
+<VETA kod="191" naz="Divertikulární nemoc střeva" dg="K57" plati_od="1994-01-01" />
+<VETA kod="192" naz="Jiné nem.střev a pobřišnice" dg="K52-K55,K58-K67" plati_od="1994-01-01" />
+<VETA kod="193" naz="Alkoholické onemocnění jater" dg="K70" plati_od="1994-01-01" />
+<VETA kod="194" naz="Jiné nemoci jater" dg="K71-K77" plati_od="1994-01-01" />
+<VETA kod="195" naz="Cholelithiáza a cholecystitida" dg="K80-K81" plati_od="1994-01-01" />
+<VETA kod="196" naz="Ak.zá.slin.bř.a j.nem.slin.bř." dg="K85-K86" plati_od="1994-01-01" />
+<VETA kod="197" naz="Jiné nemoci trávicí soustavy" dg="K82-K83,K87-K93" plati_od="1994-01-01" />
+<VETA kod="198" naz="Infekce kůže a podkož.vaziva" dg="L00-L08" plati_od="1994-01-01" />
+<VETA kod="199" naz="Jiné nem.kůže a podkož.vaziva" dg="L10-L99" plati_od="1994-01-01" />
+<VETA kod="200" naz="Revm.artrit.a j.zá.polyartrop." dg="M05-M14" plati_od="1994-01-01" />
+<VETA kod="201" naz="Artrózy" dg="M15-M19" plati_od="1994-01-01" />
+<VETA kod="202" naz="Získané deformity končetin" dg="M20-M21" plati_od="1994-01-01" />
+<VETA kod="203" naz="Jiné poruchy kloubů" dg="M00-M03,M22-M25" plati_od="1994-01-01" />
+<VETA kod="204" naz="Systémová onem.pojivové tkáně" dg="M30-M36" plati_od="1994-01-01" />
+<VETA kod="205" naz="Poruchy krč.aj.meziobrat.plot." dg="M50-M51" plati_od="1994-01-01" />
+<VETA kod="206" naz="Jiné dorzopatie" dg="M40-M49,M53-M54" plati_od="1994-01-01" />
+<VETA kod="207" naz="Onemocnění měkké tkáně" dg="M60-M79" plati_od="1994-01-01" />
+<VETA kod="208" naz="Poruchy hustoty a strukt.kosti" dg="M80-M85" plati_od="1994-01-01" />
+<VETA kod="209" naz="Osteomyelitida" dg="M86" plati_od="1994-01-01" />
+<VETA kod="210" naz="J.nem.sval.a kost.s.a poj.tká." dg="M87-M99" plati_od="1994-01-01" />
+<VETA kod="211" naz="Ak.a rychle progred.nefrit.sy." dg="N00-N01" plati_od="1994-01-01" />
+<VETA kod="212" naz="Jiné nemoci glomerulů" dg="N02-N08" plati_od="1994-01-01" />
+<VETA kod="213" naz="Tubulo-interstic.nemoci ledvin" dg="N10-N16" plati_od="1994-01-01" />
+<VETA kod="214" naz="Selhání ledvin" dg="N17-N19" plati_od="1994-01-01" />
+<VETA kod="215" naz="Urolitiáza" dg="N20-N23" plati_od="1994-01-01" />
+<VETA kod="216" naz="Zánět moč.měchýře [cystitis]" dg="N30" plati_od="1994-01-01" />
+<VETA kod="217" naz="Jiné nemoci močové soustavy" dg="N25-N29,N31-N39" plati_od="1994-01-01" />
+<VETA kod="218" naz="Hyperplazie prostaty" dg="N40" plati_od="1994-01-01" />
+<VETA kod="219" naz="Jiná onemocnění prostaty" dg="N41-N42" plati_od="1994-01-01" />
+<VETA kod="220" naz="Hydrokéla a spermatokéla" dg="N43" plati_od="1994-01-01" />
+<VETA kod="221" naz="Hypertr.předkož.,fim.,parafim." dg="N47" plati_od="1994-01-01" />
+<VETA kod="222" naz="Jiné nem.muž.pohlavních orgánů" dg="N44-N46,N48-N51" plati_od="1994-01-01" />
+<VETA kod="223" naz="Onemocnění prsu" dg="N60-N64" plati_od="1994-01-01" />
+<VETA kod="224" naz="Zánět vejcovodů a vaječníků" dg="N70" plati_od="1994-01-01" />
+<VETA kod="225" naz="Zá.nem.hrdla dělož.(cervixu)" dg="N72" plati_od="1994-01-01" />
+<VETA kod="226" naz="Jiné zánět.nem.žen.pánev.org." dg="N71,N73-N77" plati_od="1994-01-01" />
+<VETA kod="227" naz="Endometrióza" dg="N80" plati_od="1994-01-01" />
+<VETA kod="228" naz="Výhřez ženských pohlav.orgánů" dg="N81" plati_od="1994-01-01" />
+<VETA kod="229" naz="Nezá.on.vaječ.,vejcov.a š.vazu" dg="N83" plati_od="1994-01-01" />
+<VETA kod="230" naz="Poruchy menstruace" dg="N91-N92" plati_od="1994-01-01" />
+<VETA kod="231" naz="Menopauz.a j.perimenopauz.por." dg="N95" plati_od="1994-01-01" />
+<VETA kod="232" naz="Ženská neplodnost" dg="N97" plati_od="1994-01-01" />
+<VETA kod="233" naz="Jiná onem.moč.a pohlav.soust." dg="N82,N84-N90,N93-N94,N96,N98-N99" plati_od="1994-01-01" />
+<VETA kod="234" naz="Samovolný potrat" dg="O03" plati_od="1994-01-01" />
+<VETA kod="235" naz="Lékařský potrat" dg="O04" plati_od="1994-01-01" />
+<VETA kod="236" naz="Jiné těhot.s abortiv.výsledkem" dg="O00-O02,O05-O08" plati_od="1994-01-01" />
+<VETA kod="237" naz="Edém,p-urie a hyp.on.v t.,p.,š" dg="O10-O16" plati_od="1994-01-01" />
+<VETA kod="238" naz="Vc.lůžko,př.odl.pl.a předp.krv" dg="O44-O46" plati_od="1994-01-01" />
+<VETA kod="239" naz="J.pé.o m.vzt.na plod a amn.du." dg="O30-O43,O47-O48" plati_od="1994-01-01" />
+<VETA kod="240" naz="Poruchy mechanismu porodu" dg="O64-O66" plati_od="1994-01-01" />
+<VETA kod="241" naz="Poporodní krvácení" dg="O72" plati_od="1994-01-01" />
+<VETA kod="242" naz="J.kompl.těhotenství a porodu" dg="O20-O29,O60-O63,O67-O71,O73-O75,O81-O84" plati_od="1994-01-01" />
+<VETA kod="243" naz="Spontánní porod jedin.dítěte" dg="O80" plati_od="1994-01-01" />
+<VETA kod="244" naz="Kom.přev.s šest.aj.porod.st.NJ" dg="O85-O99" plati_od="1994-01-01" />
+<VETA kod="245" naz="Pos.pl.a nov.on.m.a kom.tě.,po" dg="P00-P04" plati_od="1994-01-01" />
+<VETA kod="246" naz="Po.r.pl.,podv.,p.-zk.tě.,n.p.h" dg="P05-P07" plati_od="1994-01-01" />
+<VETA kod="247" naz="Poranění za porodu" dg="P10-P15" plati_od="1994-01-01" />
+<VETA kod="248" naz="Nitroděl.hypoxie a por.asfyxie" dg="P20-P21" plati_od="1994-01-01" />
+<VETA kod="249" naz="J.on.dých.s.nov.vzn.perin.obd." dg="P22-P28" plati_od="1994-01-01" />
+<VETA kod="250" naz="Vroz.inf.a parazitární nemoci" dg="P35-P37" plati_od="1994-01-01" />
+<VETA kod="251" naz="J.inf.spec.pro perinat.období" dg="P38-P39" plati_od="1994-01-01" />
+<VETA kod="252" naz="Hemolyt.nem.plodu a novoroz." dg="P55" plati_od="1994-01-01" />
+<VETA kod="253" naz="J.stavy vzn.v perinat. období" dg="P08,P29,P50-P54,P56-P96" plati_od="1994-01-01" />
+<VETA kod="254" naz="Rozštěp páteře [spina bifida]" dg="Q05" plati_od="1994-01-01" />
+<VETA kod="255" naz="J.vroz.vady nervové soustavy" dg="Q00-Q04,Q06-Q07" plati_od="1994-01-01" />
+<VETA kod="256" naz="Vrozené vady oběhové soustavy" dg="Q20-Q28" plati_od="1994-01-01" />
+<VETA kod="257" naz="Rozštěp patra a rozštěp rtu" dg="Q35-Q37" plati_od="1994-01-01" />
+<VETA kod="258" naz="Vroz.chyb.,atréz.,sten.ten.stř" dg="Q41" plati_od="1994-01-01" />
+<VETA kod="259" naz="J.vroz.vady trávicí soustavy" dg="Q38-Q40,Q42-Q45" plati_od="1994-01-01" />
+<VETA kod="260" naz="Nesestouplé varle" dg="Q53" plati_od="1994-01-01" />
+<VETA kod="261" naz="J.vroz.vady pohl.a moč.soust." dg="Q50-Q52,Q54-Q64" plati_od="1994-01-01" />
+<VETA kod="262" naz="Vrozené deformity kyčle" dg="Q65" plati_od="1994-01-01" />
+<VETA kod="263" naz="Vrozené deformity nohou" dg="Q66" plati_od="1994-01-01" />
+<VETA kod="264" naz="J.vroz.vady a def.sv.a kost.s." dg="Q67-Q79" plati_od="1994-01-01" />
+<VETA kod="265" naz="Jiné vrozené vady" dg="Q10-Q18,Q30-Q34,Q80-Q89" plati_od="1994-01-01" />
+<VETA kod="266" naz="Abnormality chromosomů,NJ" dg="Q90-Q99" plati_od="1994-01-01" />
+<VETA kod="267" naz="Břišní a pánevní bolest" dg="R10" plati_od="1994-01-01" />
+<VETA kod="268" naz="Horečka neznámého původu" dg="R50" plati_od="1994-01-01" />
+<VETA kod="269" naz="Stáří [senilita]" dg="R54" plati_od="1994-01-01" />
+<VETA kod="270" naz="J.příz.,zn.,abn.kl.,lab.nál.NJ" dg="R00-R09,R11-R49,R51-R53,R55-R99" plati_od="1994-01-01" />
+<VETA kod="271" naz="Zlom.kostí lebky a obličeje" dg="S02" plati_od="1994-01-01" />
+<VETA kod="272" naz="Zlom.krku, hrudníku a pánve" dg="S12,S22,S32,T08" plati_od="1994-01-01" />
+<VETA kod="273" naz="Zlomenina kosti stehenní" dg="S72" plati_od="1994-01-01" />
+<VETA kod="274" naz="Zlom.jiných částí končetiny" dg="S42,S52,S62,S82,S92,T10,T12" plati_od="1994-01-01" />
+<VETA kod="275" naz="Zlom.postih.více částí těla" dg="T02" plati_od="1994-01-01" />
+<VETA kod="276" naz="Vymk.,podvrt.,nataž.ur.,v.č.tě" dg="S03,S13,S23,S33,S43,S53,S63,S73,S83,S93,T03" plati_od="1994-01-01" />
+<VETA kod="277" naz="Poranění oka a očnice" dg="S05" plati_od="1994-01-01" />
+<VETA kod="278" naz="Nitrolební poranění" dg="S06" plati_od="1994-01-01" />
+<VETA kod="279" naz="Poranění j.vnitřních orgánů" dg="S26-S27,S36-S37" plati_od="1994-01-01" />
+<VETA kod="280" naz="Drt.por.,traum.amp.ur.,v.č.tě." dg="S07-S08,S17-S18,S28,S38,S47-S48,S57-S58,S67-S68,S77-S78,S87-S88,S97-S98,T04-T05" plati_od="1994-01-01" />
+<VETA kod="281" naz="J.poran.ur.,NS a více č.těla" dg="S00-S01,S04,S09-S11,S14-S16,S19-S21,S24-S25,S29-S31,S34-S35,S39-S41,S44-S46,S49-S51,S54-S56,S59-S61,S64-S66,S69-S71,S74-S76,S79-S81,S84-S86,S89-S91,S94-S96,S99,T00-T01,T06-T07,T09,T11,T13-T14" plati_od="1994-01-01" />
+<VETA kod="282" naz="Úč.cizího těl.vnik.přir.otv.tě" dg="T15-T19" plati_od="1994-01-01" />
+<VETA kod="283" naz="Popáleniny a poleptání" dg="T20-T32" plati_od="1994-01-01" />
+<VETA kod="284" naz="Otrava léky,léč.,náv.a biol.lá" dg="T36-T50" plati_od="1994-01-01" />
+<VETA kod="285" naz="Tox.úč.lá.,zdroje mimo lékař." dg="T51-T65" plati_od="1994-01-01" />
+<VETA kod="286" naz="Syndromy týrání" dg="T74" plati_od="1994-01-01" />
+<VETA kod="287" naz="J.a NS účinky vnějších příčin" dg="T33-T35,T66-T73,T75-T78" plati_od="1994-01-01" />
+<VETA kod="288" naz="Něk.čas.kom.úr.,kom.zdr.péčeNJ" dg="T79-T88" plati_od="1994-01-01" />
+<VETA kod="289" naz="Násl.por.,otr.aj.ná.vněj.příč." dg="T90-T98" plati_od="1994-01-01" />
+<VETA kod="290" naz="Os.-setk.se zdr.sl.-prohl.,vyš" dg="Z00-Z13" plati_od="1994-01-01" />
+<VETA kod="291" naz="Asymptomatic.stav infekce HIV" dg="Z21" plati_od="1994-01-01" />
+<VETA kod="292" naz="J.os.potenc.ohrož.zdr.-přen.n." dg="Z20,Z22-Z29" plati_od="1994-01-01" />
+<VETA kod="293" naz="Řízení antikoncepce" dg="Z30" plati_od="1994-01-01" />
+<VETA kod="294" naz="Předpor.screen. aj.dohled-těh." dg="Z34-Z36" plati_od="1994-01-01" />
+<VETA kod="295" naz="Živě naroz.děti dle místa nar." dg="Z38" plati_od="1994-01-01" />
+<VETA kod="296" naz="Péče a vyšetření po porodu" dg="Z39" plati_od="1994-01-01" />
+<VETA kod="297" naz="Os.-setk.zdr.sl.-výk.,zdr.pé." dg="Z40-Z54" plati_od="1994-01-01" />
+<VETA kod="298" naz="Os.-setk.se zdr.sl.- j.důvody" dg="Z31-Z33,Z37,Z55-Z99" plati_od="1994-01-01" />
+<VETA kod="901" naz="SARS" dg="U04" plati_od="2009-01-01" />
+</swho5>
