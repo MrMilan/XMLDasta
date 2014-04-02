@@ -39,6 +39,11 @@
             this.lblPlatnost = new System.Windows.Forms.Label();
             this.tbPlatnostOd = new System.Windows.Forms.TextBox();
             this.btnNewDis = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnSpoj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReadDisXML
@@ -47,9 +52,9 @@
             this.btnReadDisXML.Name = "btnReadDisXML";
             this.btnReadDisXML.Size = new System.Drawing.Size(88, 43);
             this.btnReadDisXML.TabIndex = 0;
-            this.btnReadDisXML.Text = "NactiXML Nemoci";
+            this.btnReadDisXML.Text = "NactiXML MKN";
             this.btnReadDisXML.UseVisualStyleBackColor = true;
-            this.btnReadDisXML.Click += new System.EventHandler(this.btnReadDisXML_Click);
+            this.btnReadDisXML.Click += new System.EventHandler(this.btnReadDisXMLMKN_Click);
             // 
             // listBoxNemoci
             // 
@@ -134,11 +139,62 @@
             this.btnNewDis.UseVisualStyleBackColor = true;
             this.btnNewDis.Click += new System.EventHandler(this.btnNewDis_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(141, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 43);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "NactiXML poh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnReadDisXMLPoh_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(395, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(88, 43);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "NactiXML pum";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnReadDisXMLPumrti_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(506, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(88, 43);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "NactiXML SWHO";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnReadDisXMLSWHO_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(235, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(88, 43);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "NactiXML tdg";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.btnReadDisXMLTDG_Click);
+            // 
+            // btnSpoj
+            // 
+            this.btnSpoj.Location = new System.Drawing.Point(355, 129);
+            this.btnSpoj.Name = "btnSpoj";
+            this.btnSpoj.Size = new System.Drawing.Size(128, 75);
+            this.btnSpoj.TabIndex = 5;
+            this.btnSpoj.Text = "Spoj";
+            this.btnSpoj.UseVisualStyleBackColor = true;
+            this.btnSpoj.Click += new System.EventHandler(this.btnSpoj_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 379);
+            this.Controls.Add(this.btnSpoj);
             this.Controls.Add(this.btnNewDis);
             this.Controls.Add(this.tbPlatnostOd);
             this.Controls.Add(this.tBDiagnosa);
@@ -149,6 +205,10 @@
             this.Controls.Add(this.tBKod);
             this.Controls.Add(this.lbKod);
             this.Controls.Add(this.listBoxNemoci);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnReadDisXML);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -170,6 +230,11 @@
         private System.Windows.Forms.Label lblPlatnost;
         private System.Windows.Forms.TextBox tbPlatnostOd;
         private System.Windows.Forms.Button btnNewDis;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSpoj;
     }
 }
 

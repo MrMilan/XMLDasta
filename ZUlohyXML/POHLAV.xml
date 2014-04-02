@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<pohlav xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ciselniky.dasta.mzcr.cz/xmlschema/uzis-4.09.01.xsd" dat_gen="2014-03-31" cas_gen="12:59" ver_nclp="02.43.01" ver_ds="04.08.05" uzivatel="WebService" uzis_verze="201410" uzis_plati_od="2014-01-01">
+<VETA kod="0" naz="neudáno" skupla1="1" skupla2="0" skupla3="0" />
+<VETA kod="1" naz="muž" skupla1="1" skupla2="1" skupla3="1" />
+<VETA kod="2" naz="žena" skupla1="1" skupla2="1" skupla3="1" />
+<VETA kod="3" naz="nelze specifikovat" skupla1="1" skupla2="1" skupla3="0" />
+</pohlav>
