@@ -20,6 +20,8 @@ namespace XmlDasta
         List<MKN10> listMKNF = new List<MKN10>();
         List<Pumrti> listPumF = new List<Pumrti>();
         List<SWHO1> listSWHOF = new List<SWHO1>();
+        //list vybranych
+        List<SWHO1> litikSW = new List<SWHO1>();
 
         OpenFileDialog openFileDialogNemoci = new OpenFileDialog();
 
@@ -192,22 +194,66 @@ namespace XmlDasta
 
             }
 
+            foreach (var itemSWH in listSWHOF)
+            {
+                foreach (var itemTFG in listTDGF)
+                {
+                    foreach (var itemMKN in itemSWH.mkList)
+                    {
+                        if (itemMKN.MKN10AtrTdg == itemTFG.AtrKod)
+                        {
+                            itemTFG.swhoList.Add(itemSWH);
+                            break;
+                        }
+                    }
+                }
+
+            }
+
+            fillListBox(listBoxTDG, listTDGF);
+
         }
 
-        private void listBoxNemoci_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBoxTDG_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ////var root = xDocument.Root.Elements();
-            //var query = from veta in xDocument.Descendants(elementVetaDis)
-            //            where (veta.Attribute(vetaDisAtrName).Value == listBoxNemoci.SelectedItem.ToString())
-            //            select veta;
 
-            //foreach (var setnens in query)
-            //{
-            //    tbNazev.Text = setnens.Attribute(vetaDisAtrName).Value.ToString();
-            //    tBKod.Text = setnens.Attribute(vetaDisAtrKod).Value.ToString();
-            //    tBDiagnosa.Text = setnens.Attribute(vetaDisAtrDg).Value.ToString();
-            //    tbPlatnostOd.Text = setnens.Attribute(vetaDisAtrPlatnost).Value.ToString();
-            //}
+
+            //var root = xDocument.Root.Elements();
+            var query = from veta in listTDGF
+                        where (veta.AtrNaz == listBoxTDG.SelectedItem.ToString())
+                        select veta;
+            
+
+            foreach (var setnens in query)
+            {
+                litikSW=setnens.swhoList;
+                //tbNazev.Text = setnens.Attribute(vetaDisAtrName).Value.ToString();
+                //tBKod.Text = setnens.Attribute(vetaDisAtrKod).Value.ToString();
+                //tBDiagnosa.Text = setnens.Attribute(vetaDisAtrDg).Value.ToString();
+                //tbPlatnostOd.Text = setnens.Attribute(vetaDisAtrPlatnost).Value.ToString();
+            }
+            fillListBox(listBoxSWHO, litikSW);
+
+        }
+
+        private void listBoxSWH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            //var root = xDocument.Root.Elements();
+            var query = from veta in litikSW
+                        where (veta.AtrName == listBoxSWHO.SelectedItem.ToString())
+                        select veta;
+            List<MKN10> litikMK = new List<MKN10>();
+
+            foreach (var setnens in query)
+            {
+                litikMK = setnens.mkList;
+                //tbNazev.Text = setnens.Attribute(vetaDisAtrName).Value.ToString();
+                //tBKod.Text = setnens.Attribute(vetaDisAtrKod).Value.ToString();
+                //tBDiagnosa.Text = setnens.Attribute(vetaDisAtrDg).Value.ToString();
+                //tbPlatnostOd.Text = setnens.Attribute(vetaDisAtrPlatnost).Value.ToString();
+            }
+            fillListBox(listBoxMKN, litikMK);
 
         }
 
@@ -244,13 +290,33 @@ namespace XmlDasta
 
         #region Splitova parsovani plneni
 
-        private void fillListBox(ListBox listBoxName, XDocument xmlDok, string nameAttribute)
+        private void fillListBox(ListBox listBoxName, List<MKN10> mkn)
         {
-            //var root = xmlDok.Root.Elements();
-            //foreach (var element in root)
-            //{
-            //    listBoxName.Items.Add(element.Attribute(nameAttribute).Value);
-            //}
+            listBoxName.Items.Clear();
+            foreach (var itemMKN in mkn)
+            {
+                listBoxName.Items.Add(itemMKN.MKN10AtrName);
+            }
+
+        }
+
+        private void fillListBox(ListBox listBoxName, List<TDG> tDG)
+        {
+            listBoxName.Items.Clear();
+            foreach (var itemTDG in tDG)
+            {
+                listBoxName.Items.Add(itemTDG.AtrNaz);
+            }
+
+        }
+
+        private void fillListBox(ListBox listBoxName, List<SWHO1> sWHO1)
+        {
+            listBoxName.Items.Clear();
+            foreach (var itemSWH in sWHO1)
+            {
+                listBoxName.Items.Add(itemSWH.AtrName);
+            }
 
         }
 

@@ -1,0 +1,8 @@
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.Form1.resources
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.Properties.Resources.resources
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.csproj.GenerateResource.Cache
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\bin\Debug\XmlDasta.exe
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\bin\Debug\XmlDasta.pdb
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.exe
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.pdb
+C:\Users\User\Documents\schule\Ehealth\XMLDasta\XmlDasta\obj\x86\Debug\XmlDasta.csprojResolveAssemblyReference.cache
