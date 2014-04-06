@@ -60,6 +60,8 @@ namespace XmlDasta
             XElement elementMKN10 = new XElement("MKN10");
             XElement elementDiagnosisArea = new XElement("Diagnosis_Area");
             XElement elementDiagnosisGroup = new XElement("Diagnosis_Group");
+            XElement elementDiagnosisType = new XElement("Diagnosis_Type");
+            XElement elementDiagnosis = new XElement("Diagnosis");
             foreach (var itemTDG in tdgListek)
             {
                 elementDiagnosisArea.Add(new XElement("Code", itemTDG.AtrRim));
@@ -70,6 +72,23 @@ namespace XmlDasta
                     elementDiagnosisGroup.Add(new XElement("Code", itemSWHO.AtrKod));
                     elementDiagnosisGroup.Add(new XElement("Name", itemSWHO.AtrName));
                     elementDiagnosisGroup.Add(new XElement("Included_codes", itemSWHO.AtrDg));
+                    foreach (var itemMKN in itemSWHO.mkList)
+                    {
+                        if (itemMKN.MKN10AtrKod.Length <= 3)
+                        {
+                            elementDiagnosisType.Add(new XAttribute("pumrti",itemMKN.MKN10AtrPumrti));
+                            elementDiagnosisType.Add(new XElement("Code", itemMKN.MKN10AtrKod));
+                            elementDiagnosisType.Add(new XElement("Name", itemMKN.MKN10AtrName));
+                        }
+                        if (itemMKN.MKN10AtrKod.Length>3)
+                        {
+                            elementDiagnosis.Add(new XAttribute("pumrti", itemMKN.MKN10AtrPumrti));
+                            elementDiagnosis.Add(new XElement("Code", itemMKN.MKN10AtrKod));
+                            elementDiagnosis.Add(new XElement("Name", itemMKN.MKN10AtrName));
+                            
+                        }
+                        
+                    }
 
                 }
                 elementDiagnosisArea.Add(elementDiagnosisGroup);
