@@ -62,6 +62,7 @@ namespace XmlDasta
             XElement elementDiagnosisGroup = new XElement("Diagnosis_Group");
             XElement elementDiagnosisType = new XElement("Diagnosis_Type");
             XElement elementDiagnosis = new XElement("Diagnosis");
+            int counterStrike;
             foreach (var itemTDG in tdgListek)
             {
                 elementDiagnosisArea.Add(new XElement("Code", itemTDG.AtrRim));
@@ -72,20 +73,29 @@ namespace XmlDasta
                     elementDiagnosisGroup.Add(new XElement("Code", itemSWHO.AtrKod));
                     elementDiagnosisGroup.Add(new XElement("Name", itemSWHO.AtrName));
                     elementDiagnosisGroup.Add(new XElement("Included_codes", itemSWHO.AtrDg));
+                    counterStrike = 0;
                     foreach (var itemMKN in itemSWHO.mkList)
                     {
                         if (itemMKN.MKN10AtrKod.Length <= 3)
                         {
-                            elementDiagnosisType.Add(new XAttribute("pumrti",itemMKN.MKN10AtrPumrti));
+                            if (counterStrike == 0) { counterStrike++; } else { elementDiagnosisGroup.Add(elementDiagnosisType); }
+                            elementDiagnosisType = new XElement("Diagnosis_Type");
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrZnak)) { elementDiagnosisType.Add(new XAttribute("znak", itemMKN.MKN10AtrZnak)); }
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrPohlav)) { elementDiagnosisType.Add(new XAttribute("pohlav", itemMKN.MKN10AtrPohlav)); }
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrPumrti)) { elementDiagnosisType.Add(new XAttribute("pumrti", itemMKN.MKN10AtrPumrti)); }
                             elementDiagnosisType.Add(new XElement("Code", itemMKN.MKN10AtrKod));
                             elementDiagnosisType.Add(new XElement("Name", itemMKN.MKN10AtrName));
+                            
                         }
                         if (itemMKN.MKN10AtrKod.Length>3)
                         {
-                            elementDiagnosis.Add(new XAttribute("pumrti", itemMKN.MKN10AtrPumrti));
+                            elementDiagnosis = new XElement("Diagnosis");
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrZnak)) { elementDiagnosis.Add(new XAttribute("znak", itemMKN.MKN10AtrZnak)); }
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrPohlav)) { elementDiagnosis.Add(new XAttribute("pohlav", itemMKN.MKN10AtrPohlav)); }
+                            if (!String.IsNullOrWhiteSpace(itemMKN.MKN10AtrPumrti)) { elementDiagnosis.Add(new XAttribute("pumrti", itemMKN.MKN10AtrPumrti)); }
                             elementDiagnosis.Add(new XElement("Code", itemMKN.MKN10AtrKod));
                             elementDiagnosis.Add(new XElement("Name", itemMKN.MKN10AtrName));
-                            
+                            elementDiagnosisType.Add(elementDiagnosis);
                         }
                         
                     }

@@ -77,7 +77,7 @@
             this.btnNewDis.Name = "btnNewDis";
             this.btnNewDis.Size = new System.Drawing.Size(75, 37);
             this.btnNewDis.TabIndex = 4;
-            this.btnNewDis.Text = "Nova Nemoc";
+            this.btnNewDis.Text = "Vytvor XML";
             this.btnNewDis.UseVisualStyleBackColor = true;
             this.btnNewDis.Click += new System.EventHandler(this.btnNewDis_Click);
             // 
