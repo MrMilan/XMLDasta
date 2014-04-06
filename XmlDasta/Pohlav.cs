@@ -15,15 +15,16 @@ namespace XmlDasta
         private const string vetaPohlavAtrSkupla3 = "skupla3";
         private const string elementVetaPohlav = "VETA";
 
-        public string AtrName = "naz";
-        public string AtrKod = "kod";
-        public string AtrSkupla1 = "skupla1";
-        public string AtrSkupla2 = "skupla2";
-        public string AtrSkupla3 = "skupla3";
+        public string AtrName = "";
+        public string AtrKod = "";
+        public string AtrSkupla1 = "";
+        public string AtrSkupla2 = "";
+        public string AtrSkupla3 = "";
 
 
-        public List<Pohlav> GetListOfPohlav(XDocument xmlDok)
+        public static List<Pohlav> GetListOfPohlav(XDocument xmlDok)
         {
+
             List<Pohlav> listPoh = new List<Pohlav>();
 
             var root = xmlDok.Root.Elements();
@@ -42,7 +43,7 @@ namespace XmlDasta
 
         }
 
-        private string GetAtr(string nameAttribute, XElement element)
+        private static string GetAtr(string nameAttribute, XElement element)
         {
             return String.IsNullOrWhiteSpace((string)element.Attribute(nameAttribute)) ? "" : element.Attribute(nameAttribute).Value;
         }

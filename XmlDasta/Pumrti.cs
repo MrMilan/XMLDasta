@@ -13,11 +13,11 @@ namespace XmlDasta
         private const string vetaPumrtiAtrDg = "dg1";
         private const string elementVetaPumrti = "VETA";
 
-        public string AtrName = "naz";
-        public string AtrKod = "kod";
-        public string AtrDg = "dg1";
+        public string AtrName = "";
+        public string AtrKod = "";
+        public string AtrDg = "";
 
-        public List<Pumrti> GetListOfPumrti(XDocument xmlDok)
+        public static List<Pumrti> GetListOfPumrti(XDocument xmlDok)
         {
             List<Pumrti> listPumrti = new List<Pumrti>();
 
@@ -36,7 +36,7 @@ namespace XmlDasta
 
         }
 
-        private string GetAtr(string nameAttribute, XElement element)
+        private static string GetAtr(string nameAttribute, XElement element)
         {
             return String.IsNullOrWhiteSpace((string)element.Attribute(nameAttribute)) ? "" : element.Attribute(nameAttribute).Value;
 

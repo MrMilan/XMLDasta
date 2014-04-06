@@ -9,6 +9,7 @@ namespace XmlDasta
     class MKN10
     {
 
+        #region Atributy
         private const string vetaMKN10AtrName = "naz";
         private const string vetaMKN10AtrKod = "kod";
         private const string vetaMKN10AtrTdg = "tdg";
@@ -29,31 +30,35 @@ namespace XmlDasta
         private const string vetaMKN10AtrSkupla7 = "skupla7";
         private const string vetaMKN10AtrSkupla8 = "skupla8";
         private const string vetaMKN10AtrPlatnost = "plati_od";
+        private const string vetaMKN10AtrPohlav = "pohlav";
         private const string elementVetaMKN10 = "VETA";
-
-
-        public string MKN10AtrName = "naz";
-        public string MKN10AtrKod = "kod";
-        public string MKN10AtrTdg = "tdg";
-        public string MKN10AtrZnak = "znak";
-        public string MKN10AtrSnzis = "snzis";
-        public string MKN10AtrPumrti = "pumrti";
-        public string MKN10AtrSwho1 = "swho1";
-        public string MKN10AtrSwho2 = "swho2";
-        public string MKN10AtrSwho3 = "swho3";
-        public string MKN10AtrSwho4 = "swho4";
-        public string MKN10AtrSwho5 = "swho5";
-        public string MKN10AtrSkupla1 = "skupla1";
-        public string MKN10AtrSkupla2 = "skupla2";
-        public string MKN10AtrSkupla3 = "skupla3";
-        public string MKN10AtrSkupla4 = "skupla4";
-        public string MKN10AtrSkupla5 = "skupla5";
-        public string MKN10AtrSkupla6 = "skupla6";
-        public string MKN10AtrSkupla7 = "skupla7";
-        public string MKN10AtrSkupla8 = "skupla8";
-        public string MKN10AtrPlatnost = "plati_od";
-
-        public List<MKN10> GetListOfMKN10(XDocument xmlDok)
+        #endregion
+        #region Promene
+        public string MKN10AtrName = "";
+        public string MKN10AtrKod = "";
+        public string MKN10AtrTdg = "";
+        public string MKN10AtrZnak = "";
+        public string MKN10AtrSnzis = "";
+        public string MKN10AtrPumrti = "";
+        public string MKN10AtrSwho1 = "";
+        public string MKN10AtrSwho2 = "";
+        public string MKN10AtrSwho3 = "";
+        public string MKN10AtrSwho4 = "";
+        public string MKN10AtrSwho5 = "";
+        public string MKN10AtrSkupla1 = "";
+        public string MKN10AtrSkupla2 = "";
+        public string MKN10AtrSkupla3 = "";
+        public string MKN10AtrSkupla4 = "";
+        public string MKN10AtrSkupla5 = "";
+        public string MKN10AtrSkupla6 = "";
+        public string MKN10AtrSkupla7 = "";
+        public string MKN10AtrSkupla8 = "";
+        public string MKN10AtrPlatnost = "";
+        public string MKN10AtrPohlav = "";
+        public Pumrti pumrti = new Pumrti();
+        public Pohlav pohlavar = new Pohlav();
+        #endregion
+        public static List<MKN10> GetListOfMKN10(XDocument xmlDok)
         {
             List<MKN10> listMKN = new List<MKN10>();
 
@@ -63,7 +68,7 @@ namespace XmlDasta
                 MKN10 mkn = new MKN10();
                 mkn.MKN10AtrKod = GetAtr(vetaMKN10AtrKod, element);
                 mkn.MKN10AtrName = GetAtr(vetaMKN10AtrName, element);
-                mkn.MKN10AtrTdg = GetAtr("tdg", element);
+                mkn.MKN10AtrTdg = GetAtr(vetaMKN10AtrTdg, element);
                 mkn.MKN10AtrZnak = GetAtr("znak", element);
                 mkn.MKN10AtrSnzis = GetAtr("snzis", element);
                 mkn.MKN10AtrPumrti = GetAtr("pumrti", element);
@@ -88,11 +93,11 @@ namespace XmlDasta
 
         }
 
-        private string GetAtr(string nameAttribute, XElement element)
+        private static string GetAtr(string nameAttribute, XElement element)
         {
             return String.IsNullOrWhiteSpace((string)element.Attribute(nameAttribute)) ? "" : element.Attribute(nameAttribute).Value;
 
         }
-
+        
     }
 }

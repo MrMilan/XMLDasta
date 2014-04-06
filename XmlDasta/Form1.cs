@@ -11,7 +11,7 @@ using System.Xml;
 
 namespace XmlDasta
 {
-    public partial class Form1 : Form
+    public partial class NacitaniXML : Form
     {
         #region Globalvariables
         XDocument xDocument;
@@ -22,20 +22,21 @@ namespace XmlDasta
         List<SWHO1> listSWHOF = new List<SWHO1>();
         //list vybranych
         List<SWHO1> litikSW = new List<SWHO1>();
+        List<MKN10> litikMK = new List<MKN10>();
 
         OpenFileDialog openFileDialogNemoci = new OpenFileDialog();
 
         #endregion
 
-        public Form1()
+        public NacitaniXML()
         {
             InitializeComponent();
+            btnNewDis.Enabled=(false);
 
         }
 
         #region EvensKlik
-
-
+        #region Otvirani souboru
         private void btnReadDisXMLMKN_Click(object sender, EventArgs e)
         {
             string seznamCtenychSouboru = ListFileTerminalsOpen();
@@ -44,7 +45,7 @@ namespace XmlDasta
 
             openFileDialogNemoci.Filter = seznamCtenychSouboru;
             openFileDialogNemoci.RestoreDirectory = true;
-
+            openFileDialogNemoci.Title = "Otevri MKN";
             if (openFileDialogNemoci.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -57,9 +58,17 @@ namespace XmlDasta
                 }
             }
 
+            try
+            {
+                xDocument.Elements();
+                listMKNF = MKN10.GetListOfMKN10(xDocument);
+            }
+            catch
+            {
+                MessageBox.Show("Nenacetl si dokument");
+                //throw new Exception("Nenacetl si dokument");
+            }
 
-            MKN10 fceMKN = new MKN10();
-            listMKNF = fceMKN.GetListOfMKN10(xDocument);
 
 
         }
@@ -72,7 +81,7 @@ namespace XmlDasta
 
             openFileDialogNemoci.Filter = seznamCtenychSouboru;
             openFileDialogNemoci.RestoreDirectory = true;
-
+            openFileDialogNemoci.Title = "Otevri Pohlavi";
             if (openFileDialogNemoci.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -84,10 +93,17 @@ namespace XmlDasta
                     MessageBox.Show("Error: Pojebalo se to nekde pri nacitani \r\n Puvodni error: " + ex.Message);
                 }
             }
-
-
-            Pohlav fcepoh = new Pohlav();
-            listPohF = fcepoh.GetListOfPohlav(xDocument);
+            try
+            {
+                xDocument.Elements();
+                listPohF = Pohlav.GetListOfPohlav(xDocument);
+            }
+            catch
+            {
+                MessageBox.Show("Nenacetl si dokument");
+                //throw new Exception("Nenacetl si dokument");
+            }
+            
 
 
         }
@@ -100,7 +116,7 @@ namespace XmlDasta
 
             openFileDialogNemoci.Filter = seznamCtenychSouboru;
             openFileDialogNemoci.RestoreDirectory = true;
-
+            openFileDialogNemoci.Title = "Otevri TDG";
             if (openFileDialogNemoci.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -112,10 +128,17 @@ namespace XmlDasta
                     MessageBox.Show("Error: Pojebalo se to nekde pri nacitani \r\n Puvodni error: " + ex.Message);
                 }
             }
-
-
-            TDG fce = new TDG();
-            listTDGF = fce.GetListOfTDG(xDocument);
+            try
+            {
+                xDocument.Elements();
+                listTDGF = TDG.GetListOfTDG(xDocument);
+            }
+            catch
+            {
+                MessageBox.Show("Nenacetl si dokument");
+                //throw new Exception("Nenacetl si dokument");
+            }
+            
 
 
         }
@@ -128,7 +151,7 @@ namespace XmlDasta
 
             openFileDialogNemoci.Filter = seznamCtenychSouboru;
             openFileDialogNemoci.RestoreDirectory = true;
-
+            openFileDialogNemoci.Title = "Otevri Pumrti";
             if (openFileDialogNemoci.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -141,9 +164,17 @@ namespace XmlDasta
                 }
             }
 
-
-            Pumrti fce = new Pumrti();
-            listPumF = fce.GetListOfPumrti(xDocument);
+            try
+            {
+                xDocument.Elements();
+                listPumF = Pumrti.GetListOfPumrti(xDocument);
+            }
+            catch
+            {
+                MessageBox.Show("Nenacetl si dokument");
+                //throw new Exception("Nenacetl si dokument");
+            }
+            
 
 
         }
@@ -156,7 +187,7 @@ namespace XmlDasta
 
             openFileDialogNemoci.Filter = seznamCtenychSouboru;
             openFileDialogNemoci.RestoreDirectory = true;
-
+            openFileDialogNemoci.Title = "Otevri SWHO";
             if (openFileDialogNemoci.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -169,51 +200,22 @@ namespace XmlDasta
                 }
             }
 
-
-            SWHO1 fce = new SWHO1();
-            listSWHOF = fce.GetListOfSWHO1(xDocument);
-
+            try
+            {
+               xDocument.Elements();
+               listSWHOF = SWHO1.GetListOfSWHO1(xDocument);
+            }
+            catch
+            {
+                MessageBox.Show("Nenacetl si dokument");
+                //throw new Exception("Nenacetl si dokument");
+            }
+            
 
         }
 
-        private void btnSpoj_Click(object sender, EventArgs e)
-        {
-
-
-            foreach (var itemMKN in listMKNF)
-            {
-
-                foreach (var itemSWH in listSWHOF)
-                {
-                    if (itemMKN.MKN10AtrSwho1 == itemSWH.AtrKod)
-                    {
-                        itemSWH.mkList.Add(itemMKN);
-                    }
-
-                }
-
-            }
-
-            foreach (var itemSWH in listSWHOF)
-            {
-                foreach (var itemTFG in listTDGF)
-                {
-                    foreach (var itemMKN in itemSWH.mkList)
-                    {
-                        if (itemMKN.MKN10AtrTdg == itemTFG.AtrKod)
-                        {
-                            itemTFG.swhoList.Add(itemSWH);
-                            break;
-                        }
-                    }
-                }
-
-            }
-
-            fillListBox(listBoxTDG, listTDGF);
-
-        }
-
+        #endregion
+        #region Zmeny listboxu
         private void listBoxTDG_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -222,17 +224,16 @@ namespace XmlDasta
             var query = from veta in listTDGF
                         where (veta.AtrNaz == listBoxTDG.SelectedItem.ToString())
                         select veta;
-            
+
 
             foreach (var setnens in query)
             {
-                litikSW=setnens.swhoList;
-                //tbNazev.Text = setnens.Attribute(vetaDisAtrName).Value.ToString();
-                //tBKod.Text = setnens.Attribute(vetaDisAtrKod).Value.ToString();
-                //tBDiagnosa.Text = setnens.Attribute(vetaDisAtrDg).Value.ToString();
-                //tbPlatnostOd.Text = setnens.Attribute(vetaDisAtrPlatnost).Value.ToString();
+                litikSW = setnens.swhoList;
             }
             fillListBox(listBoxSWHO, litikSW);
+            listBoxMKN.Items.Clear();
+            lbSWHO.Text = "SWHO ";
+            lbMKN.Text = "MKN ";
 
         }
 
@@ -243,22 +244,134 @@ namespace XmlDasta
             var query = from veta in litikSW
                         where (veta.AtrName == listBoxSWHO.SelectedItem.ToString())
                         select veta;
-            List<MKN10> litikMK = new List<MKN10>();
+
 
             foreach (var setnens in query)
             {
                 litikMK = setnens.mkList;
-                //tbNazev.Text = setnens.Attribute(vetaDisAtrName).Value.ToString();
-                //tBKod.Text = setnens.Attribute(vetaDisAtrKod).Value.ToString();
-                //tBDiagnosa.Text = setnens.Attribute(vetaDisAtrDg).Value.ToString();
-                //tbPlatnostOd.Text = setnens.Attribute(vetaDisAtrPlatnost).Value.ToString();
+                lbSWHO.Text = "SWHO " + setnens.AtrKod + "\n " + setnens.AtrName + " " + setnens.AtrDg + " " + setnens.AtrPlatnost;
             }
             fillListBox(listBoxMKN, litikMK);
+
+
+        }
+
+        private void listBoxMKN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            //var root = xDocument.Root.Elements();
+            var query = from veta in litikMK
+                        where (veta.MKN10AtrName == listBoxMKN.SelectedItem.ToString())
+                        select veta;
+
+            foreach (var setnens in query)
+            {
+                lbMKN.Text = "MKN --> " + setnens.MKN10AtrKod + "\n " + setnens.MKN10AtrName + "\n " + setnens.MKN10AtrTdg + "\n " + setnens.MKN10AtrPlatnost
+                    + "\n Je pricinou umrti --> " + "\n " + setnens.pumrti.AtrName + "\n " + setnens.pumrti.AtrKod + "\n " + setnens.pumrti.AtrDg;
+            }
+
+        }
+        #endregion
+
+        private void btnSpoj_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+               #region Nacitani MKN do SWHO
+                foreach (var itemMKN in listMKNF)
+                {
+
+                    foreach (var itemSWH in listSWHOF)
+                    {
+                        if (itemMKN.MKN10AtrSwho1 == itemSWH.AtrKod)
+                        {
+                            itemSWH.mkList.Add(itemMKN);
+                        }
+
+                    }
+
+                }
+
+                #endregion
+               #region Nacitani SWHOF do TGF
+                foreach (var itemSWH in listSWHOF)
+                {
+                    foreach (var itemTFG in listTDGF)
+                    {
+                        foreach (var itemMKN in itemSWH.mkList)
+                        {
+                            if (itemMKN.MKN10AtrTdg == itemTFG.AtrKod)
+                            {
+                                itemTFG.swhoList.Add(itemSWH);
+                                break;
+                            }
+                        }
+                    }
+
+                }
+                #endregion
+               #region Nacteni Pumrti a Pohl
+                foreach (var itemTFG in listTDGF)
+                {
+                    foreach (var itemSWH in itemTFG.swhoList)
+                    {
+                        foreach (var itemMKN in itemSWH.mkList)
+                        {
+                            //nactu pohlavi
+                            foreach (var itemPohl in listPohF)
+                            {
+                                if (itemMKN.MKN10AtrPohlav == itemPohl.AtrKod)
+                                {
+                                    itemMKN.pohlavar = itemPohl;
+                                }
+                            }
+                            //nactu umrti
+                            foreach (var itemPumr in listPumF)
+                            {
+                                if (itemMKN.MKN10AtrPumrti == itemPumr.AtrKod)
+                                {
+                                    itemMKN.pumrti = itemPumr;
+                                }
+                            }
+
+                        }
+                    }
+                }
+                #endregion
+
+            }
+            catch (Exception exc)
+            {
+
+                throw new Exception("Nekde si zapomel neco nacist" + exc.Message);
+            }
+            btnNewDis.Enabled = true;
+            fillListBox(listBoxTDG, listTDGF);
 
         }
 
         private void btnNewDis_Click(object sender, EventArgs e)
         {
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.RestoreDirectory = true;
+            saveFileDialog.Title = "Uloy MKN";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    XDocument xOut = TDG.NewTDGListByPMilan(listTDGF);
+                       xOut.Save(saveFileDialog.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Pojebalo se to nekde pri ukladani \r\n Puvodni error: " + ex.Message);
+                }
+            }
+
+
             //int count = 0;
             //var query = from veta in xDocument.Descendants(elementVetaDis)
             //            where (veta.Attribute(vetaDisAtrKod).Value == tBKod.Text)

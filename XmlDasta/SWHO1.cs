@@ -14,15 +14,15 @@ namespace XmlDasta
         private const string vetaSWHO1AtrPlatnost = "plati_od";
         private const string elementVetaSWHO1 = "VETA";
 
-        public string AtrName = "naz";
-        public string AtrKod = "kod";
-        public string AtrDg = "dg";
-        public string AtrPlatnost = "plati_od";
+        public string AtrName = "";
+        public string AtrKod = "";
+        public string AtrDg = "";
+        public string AtrPlatnost = "";
         public List<Diag> diagList = new List<Diag>();
         public List<MKN10> mkList = new List<MKN10>();
         //public Diag diagIt = new Diag();
 
-        public List<SWHO1> GetListOfSWHO1(XDocument xmlDok)
+        public static List<SWHO1> GetListOfSWHO1(XDocument xmlDok)
         {
             List<SWHO1> listsWHO1 = new List<SWHO1>();
 
@@ -42,7 +42,7 @@ namespace XmlDasta
 
         }
 
-        private string GetAtr(string nameAttribute, XElement element)
+        private static string GetAtr(string nameAttribute, XElement element)
         {
             return String.IsNullOrWhiteSpace((string)element.Attribute(nameAttribute)) ? "" : element.Attribute(nameAttribute).Value;
 
